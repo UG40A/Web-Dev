@@ -1,0 +1,172 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #24292f;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f6f8fa;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #57606a;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.cta-btn {
+    background-color: #24292f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    align-items: start;
+}
+
+.card {
+    background: white;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    padding: 30px;
+    position: relative;
+}
+
+.recommended {
+    border: 2px solid #0969da;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0969da;
+    color: white;
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.desc {
+    color: #57606a;
+    font-size: 1rem;
+    margin-bottom: 24px;
+    min-height: 50px;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.price span {
+    font-size: 1rem;
+    color: #57606a;
+    font-weight: normal;
+}
+
+.card-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #d0d7de;
+    background: #f6f8fa;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.card-btn.primary {
+    background: #24292f;
+    color: white;
+    border: none;
+}
+
+.card-btn.text-only {
+    background: transparent;
+    border: none;
+    color: #0969da;
+    margin-top: -10px;
+}
+
+.card-btn.text-only:hover {
+    text-decoration: underline;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #d0d7de;
+    padding-top: 20px;
+}
+
+.features li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    padding-left: 24px;
+    position: relative;
+}
+
+.features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1a7f37;
+    font-weight: bold;
+}
+
+.addons {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.addon-card {
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
